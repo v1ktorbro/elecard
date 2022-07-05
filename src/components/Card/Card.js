@@ -32,7 +32,7 @@ function Card() {
         className='card__image'
         alt={`Изображение из категории ${data.category}`} 
       />
-      <button className='card__btn-delete' type='button' />
+      <button className='card__btn-delete' type='button' title='Удалить карточку' />
       <div className={`card__info-block ${isHoverCard && 'card__info-block_open'}`}>
         <span>{`Категория: ${data.category}`}</span>
         <span>{`Файл создан: ${handlerTimeStamp(data.timestamp)}`}</span>
