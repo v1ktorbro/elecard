@@ -1,0 +1,23 @@
+.section-cards {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 320px));
+  justify-content: space-between;
+  grid-gap: 15px;
+}
+
+@media screen and (max-width: 750px) {
+  .section-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 550px) {
+  .section-cards {
+    grid-gap: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-cards {
+    grid-template-columns: 1fr;
+  }
+}

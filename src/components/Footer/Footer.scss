@@ -1,0 +1,63 @@
+$logoElecard: url('../../images/logo.svg');
+$iconGithub: url('../../images/icon_github.svg');
+$iconTelegram: url('../../images/icon_telegram.svg');
+$backgroundColor: #fff;
+$colorComponent: #004dbb;
+
+.footer {
+  margin-top: 30px;
+  padding: 0 42px;
+  border-top: 2px solid $colorComponent;
+  background-color: $backgroundColor;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 1;
+  bottom: 1px;
+}
+
+.footer__link {
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  &_elecard {
+    background-image: $logoElecard;
+    width: 130px;
+  }
+  &_github {
+    background-image: $iconGithub;
+    height: 30px;
+  }
+  &_telegram {
+    background-image: $iconTelegram;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer__link {
+    height: 25px;
+    &_elecard {
+      width: 100px;
+    }
+  }
+}
