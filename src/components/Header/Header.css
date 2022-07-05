@@ -1,20 +1,22 @@
 .header {
   height: 60px;
-  border: 1px solid red;
+  margin-top: 35px;
+  padding: 0 42px;
+  border-bottom: 2px solid #004dbb;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   position: -webkit-sticky;
   position: sticky;
-  z-index: 5;
+  z-index: 1;
   top: 1px;
   background-color: #fff;
 }
 
 .header__logo {
-  width: 120px;
-  height: 100%;
+  width: 130px;
+  height: 30px;
   background-image: url("../../images/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -22,13 +24,42 @@
 }
 
 .header__btn-reset {
-  color: #000;
+  color: #004dbb;
   border-radius: 5px;
-  outline: none;
   background: transparent;
   height: 30px;
-  width: 180px;
+  width: 130px;
   cursor: pointer;
   font-size: 0.9rem;
   border: 1px solid;
+}
+.header__btn-reset:hover {
+  background-color: rgba(195, 229, 255, 0.4);
+}
+.header__btn-reset:active {
+  background-color: #c3e5ff;
+}
+
+@media screen and (max-width: 850px) {
+  .header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header__logo {
+    width: 100px;
+    height: 25px;
+  }
+
+  .header__btn-reset {
+    width: 100px;
+    height: 25px;
+  }
 }
