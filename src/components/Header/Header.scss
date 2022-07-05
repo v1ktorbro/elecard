@@ -8,7 +8,9 @@ $logo: url('../../images/logo.svg');
   align-items: center;
   box-sizing: border-box;
   position: sticky;
+  z-index: 5;
   top: 5px;
+  background-color: #fff;
 }
 
 .header__logo {
