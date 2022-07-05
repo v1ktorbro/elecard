@@ -1,0 +1,32 @@
+$logoElecard: url('../../images/logo.svg');
+$iconGithub: url('../../images/icon_github.svg');
+$iconTelegram: url('../../images/icon_telegram.svg');
+
+.footer {
+  border: 1px solid red;
+  height: 40px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link {
+  width: 120px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  &_elecard {
+    background-image: $logoElecard;
+  }
+  &_github {
+    background-image: $iconGithub;
+    height: 30px;
+  }
+  &_telegram {
+    background-image: $iconTelegram;
+    height: 30px;
+  }
+}
