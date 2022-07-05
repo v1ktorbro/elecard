@@ -10,10 +10,14 @@
   white-space: nowrap;
   margin: 0;
   margin-bottom: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .navigation__form-chekbox {
-  font-size: 1.1em;
+  font-size: 0.9rem;
   margin-top: 4px;
   display: flex;
   width: 100%;
@@ -23,9 +27,11 @@
 .navigation__input-wrapper {
   border: 1px solid black;
   border-radius: 5px;
-  width: 200px;
+  width: 180px;
   display: flex;
   justify-content: center;
+  height: 30px;
+  box-sizing: border-box;
 }
 
 .navigation__input {
@@ -38,4 +44,9 @@
   margin-right: 10px;
   cursor: pointer;
   margin-left: 5px;
+  align-self: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
