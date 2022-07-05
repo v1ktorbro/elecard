@@ -1,11 +1,11 @@
-$colorComponent: #000;
+$colorComponent: #004dbb;
 $btnSingleArrow: url('../../images/btn_single_arrow.svg');
 $btnDoubleArrow: url('../../images/btn_double_arrow.svg');
 
 .pagination {
   display: flex;
   color: $colorComponent;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .pagination__list {
@@ -25,11 +25,11 @@ $btnDoubleArrow: url('../../images/btn_double_arrow.svg');
   align-items: center;
   justify-content: center;
   &_active {
-    background-color: #909090;
+    background-color: #c3e5ff;
     cursor: default;
   }
   &:hover:not(&_active:hover) {
-    background-color: rgba($color: #909090, $alpha: .3);
+    background-color: rgba($color: #c3e5ff, $alpha: .4);
   }
 }
 
@@ -42,8 +42,9 @@ $btnDoubleArrow: url('../../images/btn_double_arrow.svg');
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 15px;
   &:hover {
-    background-color: rgba($color: #909090, $alpha: .3);
+    background-color: rgba($color: #c3e5ff, $alpha: .4);
   }
   &:disabled {
     opacity: .3;
@@ -65,5 +66,17 @@ $btnDoubleArrow: url('../../images/btn_double_arrow.svg');
     &-prev {
       transform: rotate(180deg);
     }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .pagination__item-list {
+    height: 25px;
+    width: 25px;
+  }
+
+  .pagination__btn {
+    height: 25px;
+    width: 25px;
   }
 }
