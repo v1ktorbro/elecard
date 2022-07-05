@@ -1,0 +1,67 @@
+.card {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  border: 2px solid blueviolet;
+}
+
+.card__image {
+  cursor: pointer;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card__btn-delete {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+  opacity: .5;
+  background-color: transparent;
+  &:hover {
+    background-color: red;
+    border-color: red;
+    opacity: 1;
+  }
+  &::before, &::after {
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    content: ' ';
+    height: 12px;
+    width: 2px;
+    background-color: #333;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.card__info-block {
+  font-size: .7rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  height: 50%;
+  box-sizing: border-box;
+  width: 100%;
+  bottom: 0;
+  background-color: rgb(229, 224, 224);
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 0 10px 10px;
+  &_open {
+    display: flex;
+  }
+}
