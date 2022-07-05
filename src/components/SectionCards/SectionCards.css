@@ -1,0 +1,8 @@
+.section-cards {
+  margin-top: 100px;
+  border: 1px solid green;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 320px));
+  justify-content: space-between;
+  grid-gap: 20px;
+}
