@@ -1,0 +1,28 @@
+.header {
+  height: 60px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+}
+
+.header__logo {
+  width: 120px;
+  height: 100%;
+  background-image: url("../../images/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.header__btn-reset {
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+  height: 30px;
+  cursor: pointer;
+}
