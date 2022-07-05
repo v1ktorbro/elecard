@@ -1,4 +1,5 @@
 $logo: url('../../images/logo.svg');
+$colorComponent: #000;
 
 .header {
   height: 60px;
@@ -9,7 +10,7 @@ $logo: url('../../images/logo.svg');
   box-sizing: border-box;
   position: sticky;
   z-index: 5;
-  top: 5px;
+  top: 1px;
   background-color: #fff;
 }
 
@@ -23,9 +24,13 @@ $logo: url('../../images/logo.svg');
 }
 
 .header__btn-reset {
+  color: $colorComponent;
   border-radius: 5px;
   outline: none;
   background: transparent;
   height: 30px;
+  width: 180px;
   cursor: pointer;
+  font-size: .9rem;
+  border: 1px solid;
 }

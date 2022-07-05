@@ -8,7 +8,7 @@
   position: -webkit-sticky;
   position: sticky;
   z-index: 5;
-  top: 5px;
+  top: 1px;
   background-color: #fff;
 }
 
@@ -22,9 +22,13 @@
 }
 
 .header__btn-reset {
+  color: #000;
   border-radius: 5px;
   outline: none;
   background: transparent;
   height: 30px;
+  width: 180px;
   cursor: pointer;
+  font-size: 0.9rem;
+  border: 1px solid;
 }
