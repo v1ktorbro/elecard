@@ -1,14 +1,9 @@
 import './Card.css';
 import React from 'react';
+import PropTypes from 'prop-types'
 
-const data = {
-	"image": "animals/baby-monkey-4888534__480.jpg",
-	"filesize": 74353,
-	"timestamp": 1393824669830,
-	"category": "animals",
-};
 
-function Card() {
+function Card({ data }) {
   const url = 'http://contest.elecard.ru/frontend_data/';
   const handlerTimeStamp = (timestamp) => {
     const date = new Date(timestamp);
@@ -41,5 +36,9 @@ function Card() {
     </article>
   );
 }
+
+Card.propTypes = {
+  data: PropTypes.object,
+};
 
 export default Card;
