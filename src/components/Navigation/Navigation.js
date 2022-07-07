@@ -1,10 +1,17 @@
 import './Navigation.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { setNamaSortParamAction } from '../../store/sortReducer';
 
 function Navigation() {
+  const dispatch = useDispatch();
+  const valueInput = useSelector((state) => state.sort.nameSortParam);
   
   const handlerClick = (evt) => {
     const {value} = evt.target;
     const allInputs = document.querySelectorAll('.navigation__input');
+
+    (valueInput === value) ? dispatch(setNamaSortParamAction('')) : dispatch(setNamaSortParamAction(value));
+
     allInputs.forEach((inputNode) => {
       const setterStyleContainerInput = (input, value) => {
         const containerInput = input.closest('.navigation__input-wrapper');
