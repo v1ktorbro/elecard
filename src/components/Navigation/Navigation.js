@@ -41,7 +41,7 @@ function Navigation() {
           <input 
             onClick={handlerClick} 
             className={`navigation__input navigation__input_date`} 
-            value='date' 
+            value='timestamp' 
             id='date' 
             type='checkbox' 
           />
@@ -63,7 +63,7 @@ function Navigation() {
           <input 
             onClick={handlerClick} 
             className={`navigation__input navigation__input_size`} 
-            value='size' 
+            value='filesize' 
             id='size'
             type='checkbox' 
           />
